@@ -86,7 +86,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    animation: foto-flutuar 1.5s infinite alternate;
+}
+@keyframes foto-flutuar{
+    from{transform: translateY(0);}
+    to{transform: translateY(-25px);
+        background-size: 10%;  
+    }
 }
 
 .home-imagem::before {
