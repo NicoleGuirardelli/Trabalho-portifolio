@@ -1,28 +1,27 @@
-/* PÁGINA PROJETOS */
+/* projeto tela*/
 
 .projetos {
     padding: 70px 8% 90px;
 }
 
-/* TÍTULO DA SEÇÃO */
 
-.titulo-secao {
+.titulo-projetos {
     text-align: center;
     margin-bottom: 45px;
 }
 
-.titulo-secao p {
+.titulo-projetos p {
     color: var(--cor-coral);
     font-size: 16px;
     margin-bottom: 8px;
 }
 
-.titulo-secao h2 {
+.titulo-projetos h2 {
     color: var(--cor-texto);
     font-size: 36px;
 }
 
-/* LISTA DE PROJETOS */
+
 
 .lista-projetos {
     display: grid;
@@ -30,7 +29,7 @@
     gap: 28px;
 }
 
-/* CARD DO PROJETO */
+
 
 .projeto-card {
     background-color: var(--cor-card);
@@ -68,7 +67,7 @@
     height: 170px;
 }
 
-/* TEXTOS DO CARD */
+
 
 .projeto-card h3 {
     color: var(--cor-texto);
@@ -80,14 +79,13 @@
 
 .projeto-card p {
     color: var(--cor-texto-suave);
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.6;
     margin-bottom: 22px;
     position: relative;
     z-index: 1;
 }
 
-/* TECNOLOGIAS DO PROJETO */
 
 .tecnologias-projeto {
     display: flex;
@@ -95,6 +93,7 @@
     gap: 10px;
     margin-bottom: 24px;
     position: relative;
+
     z-index: 1;
 }
 
@@ -107,7 +106,6 @@
     border: 1px solid rgba(249, 115, 22, 0.25);
 }
 
-/* BOTÃO DO CARD */
 
 .projeto-card a {
     width: fit-content;
@@ -127,28 +125,32 @@
     transform: translateY(-3px);
 }
 
-/* RESPONSIVIDADE */
 
 @media (max-width: 1000px) {
     .lista-projetos {
         grid-template-columns: repeat(2, 1fr);
     }
+
 }
 
 @media (max-width: 700px) {
     .projetos {
+
         padding: 55px 8% 70px;
     }
 
-    .titulo-secao h2 {
+    .titulo-projetos h2 {
         font-size: 30px;
+
     }
 
     .lista-projetos {
+
         grid-template-columns: 1fr;
     }
 
     .projeto-card {
+
         min-height: auto;
     }
 }

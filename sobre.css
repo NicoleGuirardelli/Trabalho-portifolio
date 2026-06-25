@@ -1,5 +1,5 @@
 
-/* PÁGINA SOBRE */
+/* tela sobre */
 
 .sobre {
     padding: 70px 8%;
@@ -56,10 +56,6 @@
     border: 3px solid var(--cor-coral);
     box-shadow: 0 14px 35px rgba(0, 0, 0, 0.35);
 }
-.invertido {
-    flex-direction: row;
-}
-/* RESPONSIVIDADE - SOBRE */
 
 @media (max-width: 900px) {
     .sobre {
