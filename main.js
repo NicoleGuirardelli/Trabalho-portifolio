@@ -9,6 +9,15 @@ function abrirMenu(){
     }
     
 }
+const botaoVoltarTopo = document.getElementById("botaoVoltarTopo");
+
+window.addEventListener("scroll", function () {
+    if (window.scrollY > 200) {
+        botaoVoltarTopo.classList.add("aparecer");
+    } else {
+        botaoVoltarTopo.classList.remove("aparecer");
+    }
+});
 
 function voltarAoTopo(){
     window.scrollTo({
