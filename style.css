@@ -171,3 +171,34 @@ header {
     height: 50px;
     object-fit: contain;
 }
+
+
+/* para voltar no topo pag */
+.botao-voltar-topo {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--cor-laranja);
+    color: var(--cor-texto);
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+    transition: 0.3s;
+    z-index: 10;
+}
+
+.botao-voltar-topo:hover {
+    background-color: var(--cor-coral);
+    transform: translateY(-4px);
+}
+
+.botao-voltar-topo.aparecer {
+    display: flex;
+}
