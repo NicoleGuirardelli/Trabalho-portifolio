@@ -113,7 +113,7 @@ header {
 }
 
 .menu {
-    display: flex;
+    display: none;
     gap: 28px;
 }
 
@@ -126,6 +126,17 @@ header {
 
 .menu a:hover {
     color: var(--cor-coral);
+}
+.botao-menu{
+    background: none;
+    border: none;
+    color: var(--cor-texto);
+    font-size: 32px;
+    cursor: pointer;
+}
+.menu.ativo{
+    display: flex;
+    padding: 15px;
 }
 
 
