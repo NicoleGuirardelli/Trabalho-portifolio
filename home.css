@@ -193,4 +193,85 @@
     font-size: 24px;
 }
 
-/* melhorar cards */
+/* contato */
+.contato {
+    padding: 60px 8% 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-contato {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titulo-contato p {
+    color: var(--cor-coral);
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.titulo-contato h2 {
+    color: var(--cor-texto);
+    font-size: 33px;
+}
+
+.formulario-contato {
+    width: 100%;
+    max-width: 600px;
+    background-color: var(--cor-card);
+    border: 1px solid rgba(249, 115, 22, 0.18);
+    padding: 40px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.campo label {
+    color: var(--cor-texto-claro);
+    font-size: 16px;
+}
+
+.campo input, .campo textarea {
+    background-color: var(--cor-fundo);
+    border: 1px solid rgba(249, 115, 22, 0.25);
+    border-radius: 12px;
+    padding: 14px;
+    color: var(--cor-texto);
+    font-family: inherit;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.campo input:focus, .campo textarea:focus {
+    border-color: var(--cor-coral);
+    box-shadow: 0 0 10px rgba(251, 146, 60, 0.2);
+}
+
+.botao-enviar {
+    background-color: var(--cor-laranja);
+    color: var(--cor-fundo);
+    border: none;
+    padding: 14px 27px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.botao-enviar:hover {
+    background-color: var(--cor-coral);
+    transform: translateY(-2px);
+}
